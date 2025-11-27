@@ -1,0 +1,28 @@
+Week 12 (2025/11/27)
+-新的視窗元件
+ *TabControl
+    *TabItem
+ *TreeView
+ *ListBox
+ *ListView
+-OO的概念
+
+-C# 中的類別 (Classes)
+類別是 C# 中物件導向程式設計 (OOP) 的基本建構區塊。它是一個藍圖 (Blueprint) 或範本 (Template)，用於建立具有特定屬性 (資料) 和行為 (方法) 的物件 (Objects)。
+好的，我會為您詳細說明 C# 中的類別 (Classes)、方法的存取權限 (Access Modifiers) 以及 存取器 (Accessors) 的意義和用法。
+
+
+-方法的存取權限 (Access Modifiers)
+存取權限是用來指定類別、欄位、方法或其他成員可以從哪些程式碼部分進行存取。這是實現封裝 (Encapsulation) 的關鍵機制。
+
+C# 中主要存取權限,說明,存取範圍 :
+public,完全開放。 任何地方的程式碼都可以存取該成員。,相同組件 和 外部組件
+private,最嚴格。 只有在宣告該成員的類別或結構內才能存取。,只有宣告類別內
+protected,只有在宣告該成員的類別內，或從該類別衍生出來的類別內才能存取。,宣告類別 和 衍生類別內
+internal,只有在目前的組件 (Assembly) 內才能存取。組件通常是一個 .dll 或 .exe 檔案。,只有相同組件內
+protected internal,可以在相同組件內的任何地方存取，或在不同組件中衍生類別內存取。,相同組件內 或 外部組件的衍生類別內
+private protected,只有在相同組件內的衍生類別中才能存取。 (較少用),相同組件的衍生類別內
+
+-存取器 (Accessors) / 屬性 (Properties)
+在 C# 中，存取器是指用來控制對屬性 (Properties) 進行讀取和寫入操作的程式碼區塊。這是 C# 實現封裝的首選方式。
+C# 的 Property (屬性) 是一個結合了欄位 (Field) 和方法 (Method) 優點的成員：它在外觀上像欄位，但其背後的操作是由存取器方法控制。
