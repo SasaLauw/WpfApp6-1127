@@ -26,3 +26,5 @@ private protected,只有在相同組件內的衍生類別中才能存取。 (較
 -存取器 (Accessors) / 屬性 (Properties)
 在 C# 中，存取器是指用來控制對屬性 (Properties) 進行讀取和寫入操作的程式碼區塊。這是 C# 實現封裝的首選方式。
 C# 的 Property (屬性) 是一個結合了欄位 (Field) 和方法 (Method) 優點的成員：它在外觀上像欄位，但其背後的操作是由存取器方法控制。
+
+-在WPF程式中新增自定類別
